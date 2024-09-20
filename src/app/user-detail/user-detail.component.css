@@ -1,0 +1,36 @@
+.menu {
+  padding: 2rem;
+  text-align: start;
+  background: #f07c10;
+  height: 2rem;
+  align-content: center;
+}
+
+.menu button {
+  background: #f07c10;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.menu button:hover {
+  font-size: 1.3rem;
+}
+
+.content {
+  min-height: 100vh;
+  background: rgb(241 189 119);
+}
+
+.content-user {
+  padding: 2rem;
+
+  color: #795548;
+}
+ul {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

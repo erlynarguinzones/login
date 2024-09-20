@@ -1,0 +1,11 @@
+<div class="menu">
+  <button (click)="logout()">Cerrar sessión</button>
+</div>
+<div class="content">
+  <h1>Lista de Usuarios</h1>
+  <ul>
+    <li *ngFor="let user of usuarios" (click)="goToUserDetail(user.id)">
+      {{ user.name }}
+    </li>
+  </ul>
+</div>

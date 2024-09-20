@@ -1,0 +1,42 @@
+<div class="content">
+  <div class="menu">
+    <button (click)="back()"><i class="fas fa-arrow-left"></i> Volver</button>
+  </div>
+
+  <div *ngIf="user" class="content-user">
+    <h2>Detalles del Usuario</h2>
+    <ul>
+      <li><strong>Nombre:</strong> {{ user.name }}</li>
+      <li><strong>Username:</strong> {{ user.username }}</li>
+      <li><strong>Email:</strong> {{ user.email }}</li>
+      <li><strong>Direccion:</strong> {{ user.name }}</li>
+      <ul>
+        <li><strong>Calle:</strong> {{ user.address.street }}</li>
+        <li><strong>Suite:</strong> {{ user.address.suite }}</li>
+        <li><strong>Ciudad:</strong> {{ user.address.city }}</li>
+        <li><strong>Código Postal:</strong> {{ user.address.zipcode }}</li>
+        <li>
+          <strong>Geo:</strong>
+          <ul>
+            <li><strong>Latitud:</strong> {{ user.address.geo.lat }}</li>
+            <li><strong>Longitud:</strong> {{ user.address.geo.lng }}</li>
+          </ul>
+        </li>
+      </ul>
+
+      <li><strong>Teléfono:</strong> {{ user.phone }}</li>
+      <li><strong>Sitio Web:</strong> {{ user.website }}</li>
+      <li>
+        <strong>Compañía:</strong>
+        <ul>
+          <li><strong>Nombre:</strong> {{ user.company.name }}</li>
+          <li><strong>Eslogan:</strong> {{ user.company.catchPhrase }}</li>
+          <li><strong>BS:</strong> {{ user.company.bs }}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!user">
+    <p>Usuario no encontrado.</p>
+  </div>
+</div>

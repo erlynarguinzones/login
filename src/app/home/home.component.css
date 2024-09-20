@@ -1,0 +1,57 @@
+h1 {
+  font-size: 1.8rem;
+  color: #f07c10;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f07c10;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-content: center;
+  padding-left: 1rem;
+  min-height: 2.5rem;
+  color: white;
+}
+
+li:hover {
+  background: rgb(241 189 119);
+  color: #795548;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.menu {
+  padding: 2rem;
+  text-align: end;
+  background: #f07c10;
+  height: 2rem;
+  align-content: center;
+}
+
+.menu button {
+  background: #f07c10;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.menu button:hover {
+  font-size: 1.3rem;
+}
